@@ -1,17 +1,17 @@
 #import <Cephei/HBPreferences.h>
 
 static NSDictionary *prefixes = @{
-    @"furry": @[@"OwO ", @"H-hewwo?? ", @"Huohhhh. ", @"Haiiii! ", @"UwU ", @"OWO ", @"HIIII! ", @"<3 "],
+    @"loli": @[@"OwO ", @"H-hewwo?? ", @"Huohhhh. ", @"Haiiii! ", @"UwU ", @"OWO ", @"HIIII! ", @"<3 "],
     @"pirate": @[@"Arr, matey! ", @"Arrr! ", @"Ahoy. ", @"Yo ho ho! "],
     @"nepeta": @[@":33 < "]
 };
 
 static NSDictionary *suffixes = @{
-    @"furry": @[@" :3", @" UwU", @" ʕʘ‿ʘʔ", @" >_>", @" ^_^", @"..", @" Huoh.", @" ^-^", @" ;_;", @" ;-;", @" xD", @" x3", @" :D", @" :P", @" ;3", @" XDDD", @", fwendo", @" ㅇㅅㅇ", @" (人◕ω◕)", @"（＾ｖ＾）", @" Sigh.", @" >_<"]
+    @"loli": @[@" :3", @" UwU", @" ʕʘ‿ʘʔ", @" >_>", @" ^_^", @"..", @" Huoh.", @" ^-^", @" ;_;", @" ;-;", @" xD", @" x3", @" :D", @" :P", @" ;3", @" XDDD", @", fwendo", @" ㅇㅅㅇ", @" (人◕ω◕)", @"（＾ｖ＾）", @" Sigh.", @" >_<"]
 };
 
 static NSDictionary *replacement = @{
-    @"furry": @{
+    @"loli": @{
         @"r": @"w",
         @"l": @"w",
         @"R": @"W",
@@ -159,7 +159,7 @@ NSString *owoify (NSString *text, bool replacementOnly) {
     HBPreferences *file = [[HBPreferences alloc] initWithIdentifier:@"me.nepeta.owo"];
 
     if ([([file objectForKey:@"Enabled"] ?: @(YES)) boolValue]) {
-        mode = [file objectForKey:@"Style"] ?: @"furry";
+        mode = [file objectForKey:@"Style"] ?: @"loli";
 
         if ([([file objectForKey:@"EnabledEverywhere"] ?: @(NO)) boolValue]) {
             %init(OwOEverywhere);

@@ -48,14 +48,14 @@
 			<string>Style</string>
 			<key>validValues</key>
 			<array>
-				<string>furry</string>
+				<string>loli</string>
 				<string>pirate</string>
 				<string>leet</string>
 				<string>nepeta</string>
 			</array>
 			<key>validTitles</key>
 			<array>
-				<string>Furry</string>
+				<string>Loli</string>
 				<string>Pirate</string>
 				<string>1337</string>
 				<string>Nepeta</string>
